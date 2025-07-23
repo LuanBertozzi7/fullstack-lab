@@ -1,7 +1,5 @@
 const data = new Date(); // constructor function
-// console.log(data.getDate()); // Dia do mês
-// console.log(data.getDay()); // Dia da semana 0 - domingo -> 6 - Sabádo
-// console.log(data.getFullYear()); // Obter o ano
+
 
 function zeroAEsquerda(num) {
   return num >= 10 ? num : `0${num}`;
