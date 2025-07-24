@@ -1,20 +1,28 @@
 const fruts = ["pear", "watermelon", "litter"];
 
-// for (i = 0; i < fruts.length; i++) {
-//   console.log(fruts[i])
-// }
-
-for (let i in fruts) {
-  console.log(fruts[i]);
-} // for in
-
 const cars = {
   model: "onix",
   engine: "v12",
   color: "red",
   id: 482208
-}
+};
 
-for (let i in cars){
-  console.log(cars)
-}
+// CLASSIC FOR
+// for (i = 0; i < fruts.length; i++) {
+//   console.log(fruts[i])
+// }
+// FOR IN
+// for (let i in fruts) {
+//   console.log(fruts[i]);
+// } // for in
+// FOR OF
+// fruts.forEach(function(elemento, indice){
+//   console.log(elemento, indice);
+// });
+// OTHERS
+// for (let key in cars) {
+//   console.log(`Itens: ${key}: ${cars[key]}`)
+// }; 
+// for (let value of fruts) {
+//   console.log(value);
+//}
