@@ -13,7 +13,6 @@ function factoringMMC(number) {
   return factors;
 }
 
-
 const first_number = 60;
 const fatoresPrimos = factoringMMC(first_number);
 console.log(`fatores primos de ${first_number}: ${fatoresPrimos.join(' x ')}`);

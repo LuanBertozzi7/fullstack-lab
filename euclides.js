@@ -22,3 +22,4 @@ function calculateMMC(a, b) {
 // const MMC = calculateMMC(firstNumber, secondNumber);
   
 // console.log(`MDC:${MDC} MMC:${MMC}`);
+
