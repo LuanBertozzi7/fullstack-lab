@@ -24,5 +24,4 @@ const cars = {
 //   console.log(`Itens: ${key}: ${cars[key]}`)
 // }; 
 // for (let value of fruts) {
-//   console.log(value);
-//}
+//   console.log(value); }
