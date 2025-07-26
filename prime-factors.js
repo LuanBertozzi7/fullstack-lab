@@ -1,3 +1,8 @@
+/**
+ * 
+ * @param {number} number 
+ * @returns {object}
+ */
 function factoringMMC(number) {
   const factors = [];
   let divider = 2;
@@ -15,4 +20,4 @@ function factoringMMC(number) {
 
 const first_number = 60;
 const fatoresPrimos = factoringMMC(first_number);
-console.log(`fatores primos de ${first_number}: ${fatoresPrimos.join(' x ')}`);
+console.log(`prime factors of ${first_number}: ${fatoresPrimos.join(' x ')}`);
