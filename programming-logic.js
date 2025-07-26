@@ -20,4 +20,15 @@
 
 /* FUNÇÂO QUE VERIFICA SE UMA IMAGEM(RECEBENDO DOIS ARGUMENTOS, ALTURA E LARGURA, E RETORNA SE 
 ESTÁ NO MODO PAISAGEM  */
+// function isLandscape(width, height) {
+  
+//   if( width > height ) {
+//     return `your image, already in landscape`
+//   } else if ( width < height ) {
+//     return `your image, already in portrait` 
+//   } else {
+//     return `your image is square`
+//   }
+// }
+
 
