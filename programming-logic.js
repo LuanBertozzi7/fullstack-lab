@@ -31,4 +31,24 @@ ESTÁ NO MODO PAISAGEM  */
 //   }
 // }
 
+for (let i = 0; i <= 100; i++) {
+  let forNumber;
+  forNumber = i
+}
 
+function FizzNumber(Usernumber) {
+  if(typeof Usernumber !== "number") {
+    return `is NaN`
+  }
+  if(Usernumber % 3 === 0){
+    return `Fizz`
+  } else if (Usernumber % 5 === 0){
+    return `Buzz`
+  } else if (Usernumber % 3 === 0 && Usernumber % 5 === 0) {
+    return `FizzBuzz`
+  } else {
+    return Usernumber
+  }
+}
+
+console.log(FizzNumber(forNumber))
