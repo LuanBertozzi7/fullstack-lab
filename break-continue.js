@@ -1,17 +1,15 @@
-const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-for (numero of numeros) {
-
-  // if (numero === 2 || numero === 10) {
-  //   continue;
-  // }
+for (number of numbers) {
   
-  if (numero === 7){
+  
+  if (number === 2 || number === 10) {
+    /* CONTINUE -> to skip the current iteration of a loop, use the continue statemeant*/ 
+    continue;
+  }
+  if (number === 7){
+    /* BREAK -> exit the loop when a condition is true  */
     break;
   }
-  console.log(numero);
-  
+  console.log(number);
 }
-
-
-// adicionar numeros pro array numeros, e verificar
