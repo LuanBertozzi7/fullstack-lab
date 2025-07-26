@@ -1,25 +1,27 @@
-//  function to calculate MDC using the euclides algorithm 
+/**
+ * Calculates the GCD (Greatest Common Divisor) using Euclid's algorithm
+ * @param {number} a - First number
+ * @param {number} b - Second number
+ * @returns {number} The GCD of a and b
+ */
 function calculateMDC(a, b) {
-  while(b) {
+  while (b) {
     const rest = a % b;
     a = b;
     b = rest;
   }
-  return a;
+  return Math.abs(a);
 }
-// function to calculate MMC
+
+/**
+ * Calculates the LCM (Least Common Multiple) of two numbers
+ * @param {number} a - First number
+ * @param {number} b - Second number
+ * @returns {number} The LCM of a and b
+ */
 function calculateMMC(a, b) {
-  if(a === 0 || b === 0) {
+  if (a === 0 || b === 0) {
     return 0;
   }
-  return (a*b) / calculateMDC(a, b);
+  return Math.abs((a * b) / calculateMDC(a, b));
 }
-
-// const firstNumber = prompt("first Number:");
-// const secondNumber= prompt("second Number");
-
-// const MDC = calculateMDC(firstNumber, secondNumber);
-// const MMC = calculateMMC(firstNumber, secondNumber);
-  
-// console.log(`MDC:${MDC} MMC:${MMC}`);
-
