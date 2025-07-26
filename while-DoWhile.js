@@ -3,7 +3,6 @@ while(i <= 10) {
   console.log(i);
   i++
 };
-
 // RANDOM NUMBER
 function RandomNumber(min, max) {
   const r = Math.random() * (max- min) + min;
