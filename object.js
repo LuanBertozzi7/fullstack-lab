@@ -3,31 +3,28 @@ const pessoa = {
   sobrenome: "Bertozzi",
   idade: 19,
   endereco: {
-    Rua: "São Luiz",
+    rua: "São Luiz",
     avenida: "Nova Pimenta",
     numero: 1180
   }
-}
+};
 
-
-
-// destructuring
+// Object destructuring to extract properties from pessoa
 const {
   nome: nomePessoa,
-  sobrenome: sobrenomePesssoa,
+  sobrenome: sobrenomePessoa,
   idade: idadePessoa = 'Idade não informada'
 } = pessoa;
 
-console.log(`Nome: ${nomePessoa} ${sobrenomePesssoa} idade: ${idadePessoa}`);
+console.log(`Name: ${nomePessoa} ${sobrenomePessoa} Age: ${idadePessoa}`);
 
-
+// Nested destructuring to extract address properties
 const {
   endereco: {
-    Rua,
+    rua,
     avenida,
     numero
   }
 } = pessoa;
 
-console.log(`endereço: ${Rua} avenida ${avenida} número ${numero}`);
- 
+console.log(`Address: ${rua}, avenue ${avenida}, number ${numero}`);
