@@ -80,5 +80,4 @@ function FizzNumber(Usernumber) {
     return Usernumber;
   }
 }
-
 console.log(FizzNumber(forNumber));
