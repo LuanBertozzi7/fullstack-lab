@@ -12,5 +12,7 @@ const obj = {
     console.log("hello world")
   }
 }
-obj.say();
+
+
+
 
