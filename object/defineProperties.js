@@ -2,7 +2,8 @@
 function Product(name, price, stock) {
   this.name = name;
   this.price = price;
-  this.stock = stock;
+  let privateStock = stock;
+
   Object.defineProperties(this, {
     name: {
       enumerable: true,
@@ -19,13 +20,26 @@ function Product(name, price, stock) {
     },
 
     stock: {
+      // writable: false, // can it be rewritten?
+      // value: stock, // show the valuex
       enumerable: true, // show key
-      value: stock, // show the value
-      writable: false, // can it be rewritten?
       configurable: true, // can it be reconfigured?
+
+      get: function () {
+        return `current stock is ${privateStock}`;
+      },
+
+      set: function (value) {
+        if (typeof value !== "number") {
+          console.log("stock not a number");
+          return;
+        }
+        privateStock = value;
+      },
     },
   });
 }
-const newProduct = new Product("cup", 12, 4);
 
-console.log(Object.keys(newProduct));
+const CUP = new Product("cup", 12);
+CUP.stock = 18;
+console.log(CUP.stock);
